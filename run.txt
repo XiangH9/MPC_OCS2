@@ -1,0 +1,25 @@
+uni_ws目录下：
+
+conda 环境:Uros
+
+colcon build --packages-select unitree_guide_controller --symlink-install
+
+source install/setup.bash
+
+ros2 launch unitree_guide_controller gazebo_classic.launch.py pkg_description:=go1_description
+
+
+ros2 run keyboard_input keyboard_input
+
+
+ros2 launch unitree_guide_controller gazebo_classic.launch.py pkg_description:=go1_description rviz:=false
+
+
+另开一个终端拉起gazebo
+gzclient
+
+
+
+将当前进度同步进/home/xiangh9/xhros2/uni_ws/UnitreeGuideController_NMPC_Modification_Plan.md，确保一个新的AI 在阅读这个文件之后能够立即接手当前工作，并且一步一步告诉我如何修改，保持和你一样的工作模式
+
+/home/xiangh9/xhros2/uni_ws/UnitreeGuideController_NMPC_Modification_Plan.md  阅读这个文件，接手这个工作，一步一步带我进行修改，每一步修改需要给出理由，修改由我完成，主要是让我跟上你的修改思路
